@@ -1,4 +1,4 @@
-﻿# README - API de PDV (Ponto de Venda) - Desafio Módulo 5
+﻿# README - API de PDV (Ponto de Venda)
 ## Este projeto consiste na criação de uma API para um PDV (Frente de Caixa), onde são gerenciados dados de categorias, clientes, pedidos, produtos e usuários. O sistema utiliza tecnologias como Node.js, Express, PostgreSQL, Nodemailer para envio de e-mails, e segue práticas de clean code. O projeto foi feito em equipe usando Fluxo de trabalho pelo git hub e praticas de Scrum, divisão de tarefas pelo Trello e dividido em 3 sprints.
 
 ## Tecnologias Utilizadas
