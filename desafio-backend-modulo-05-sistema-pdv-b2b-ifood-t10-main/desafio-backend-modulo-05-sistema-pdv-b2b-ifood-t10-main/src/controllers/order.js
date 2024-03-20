@@ -66,7 +66,7 @@ const insertOrder = async (req, res) => {
 
       const productsOrderEcxistent = await connection("produtos")
         .where("id", produto.produto_id)
-        .first()
+        .first();
 
       await connection("pedido_produtos")
         .insert({
@@ -74,7 +74,7 @@ const insertOrder = async (req, res) => {
           produto_id: produto.produto_id,
           quantidade_produto: produto.quantidade_produto,
           valor_produto: productsOrderEcxistent.valor
-        })
+        });
     }
 
     return res.status(201).json(registeredOrder);

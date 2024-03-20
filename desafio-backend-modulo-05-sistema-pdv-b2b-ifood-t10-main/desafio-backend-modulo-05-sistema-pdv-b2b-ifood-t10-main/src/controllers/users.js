@@ -95,8 +95,6 @@ const editUserProfile = async (req, res) => {
   }
 };
 
-
-
 module.exports = {
   insertUser,
   detailUserProfile,

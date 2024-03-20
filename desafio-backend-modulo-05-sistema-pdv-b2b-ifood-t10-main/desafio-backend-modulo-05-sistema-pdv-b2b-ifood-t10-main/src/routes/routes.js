@@ -27,6 +27,4 @@ routes.get("/cliente/:id", clientes.detailClient);
 routes.post("/pedido", pedidos.insertOrder);
 routes.get("/pedido", pedidos.listOrder);
 
-
-
 module.exports = routes;

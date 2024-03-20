@@ -5,7 +5,6 @@ const joi = require('joi');
 const insertProduct = async (req, res) => {
   const { descricao, categoria_id, quantidade_estoque, valor } = req.body;
 
-
   if (!descricao || !categoria_id || !quantidade_estoque || !valor) {
     return res.status(400).json("Todos os campos obrigatórios devem ser informados.");
   }
@@ -188,7 +187,6 @@ const deleteProduct = async (req, res) => {
     if (existingProduct.produto_imagem) {
       const imageUrl = new URL(existingProduct.produto_imagem);
       const imagePath = imageUrl.pathname.substring(1);
-      console.log(imagePath)
       await deleteImage(imagePath);
     }
 
